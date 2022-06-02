@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wallpaper{
+    min-height: 100vh;
+    width:100% ;
+    background-image: linear-gradient(rgba(34, 72, 63, 0.527),rgba(4, 9, 30, 0.7)),url(images2/handshake.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+    
+ 
+}
+
+.navbar ul li{
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+
+}
+
+.list{
+    font-family: 'Source Sans Pro', sans-serif
+
+}
+
+.navbar ul li a{
+text-decoration: none;
+color: #ffff;
+text-transform: uppercase;
+
+}
+
+.navbar ul li::after{
+content:'';
+height: 2px;
+width: 0;
+background: rgb(216, 213, 227);
+position: absolute;
+left: 0;
+bottom: -10px;
+transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+width: 100%;
+
+}
+
+.content{
+    font-family: 'Open Sans', sans-serif;
+  color: rgb(253, 253, 253);
+  width: 100%;
+  position: relative;
+  top: 50%;
+transform: translateY(-50%);
+text-align: center;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+margin: 20px auto;
+font-weight: 100;
+line-height: 25px;
+font-size: 16px;
+}
+
+.button{
+
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 1px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(248, 251, 255);
+    background: transparent;
+    color: rgb(234, 240, 245);
+    cursor: pointer;
+
+
+}
+
+/* this is how to adajust the size for mobile 
+@media(max-width:700px){
+    .navbar{
+        padding: 0;
+    }
+
+    .wallpaper{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .navbar-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .content h1{
+        font-size: 20px;
+    }
+        .navbar ul li{
+            display: block;
+        }
+             .navbar ul li a{
+                 position: absolute;
+                 background: rgb(94, 114, 218)
+                 height 100vh;
+                 
+                 
+                }
+}
+ */
+
+.button:hover{
+    border: 1px solid rgb(52, 35, 98);
+    background: rgb(49, 97, 186);
+    transition: 1s;
+    
+}
+
+.span{
+
+    background: rgb(255, 250, 250);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+.about{
+    text-align: center;
+    font-size: 19px;
+    cursor: pointer;
+    font-style: normal;
+    text-decoration: solid;
+    font-family: 'Source Sans Pro', sans-serif
+
+}
+
+.about p{
+    text-align: center;
+    padding-top: 22px;
+    font-size: 19px;
+    font-weight: 100;
+    font-style: normal;
+    cursor: text;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.about h2{
+    padding-top: 16px;
+
+}
+/* 
+.container{
+max-width: 1200px;
+margin: auto;
+background:#f2f2f2;
+overflow: auto;
+
+}
+
+.images{
+margin: 5px;
+
+
+width: 390px;
+
+}
+
+
+.images img{
+    width: 100%;
+    height: auto;
+
+}
+
+.desc{
+
+    padding: 15px;
+    text-align: center;
+}
+ */
+
+ .images{
+    width: 90%;
+padding: 10px;
+background: rgba(221, 221, 221, 0);
+margin: 100px auto ;
+display: flex;
+font-family: 'Roboto', sans-serif;
+    
+ }
+
+ .box{
+
+    width: 250px;
+    height: 300px;
+    background: #ddd;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 2px rgba(6, 3, 3, 0.375);
+    transition: 1s;
+ }
+
+.box img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.box:hover{
+transform: scale(1.3);
+z-index: 2;
+
+}
+
+/*  
+ .images img{
+     padding-top: 23%;
+display: block;
+width: 100%;
+border-radius: 5px;
+ }
+
+ .images:hover{
+     transform: scale(1.2);
+     z-index: 2;
+
+ }
+ 
+ .equipment{
+     text-align: center;
+     padding-top: 45%;
+     font-size: x-large;
+    }
+    */
+.back2{
+
+    position: relative;
+    min-height: 90vh;
+        width: 90%;
+        margin: 0 auto;
+        background-image: linear-gradient(rgba(34, 72, 63, 0.527), rgba(60, 75, 136, 0.7)), url(images2/stethoscope.jpg);
+        background-position: center;
+        background-size: cover;
+
+}
+
+.back2 h2{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: rgba(37, 27, 27, 0.737);
+}
+
+/* 
+section{
+    width: 80%;
+    margin: 80px;
+}
+
+.what-type-of{
+    text-align: center;
+    font-size: 4vmin;
+    color: darkblue;
+
+}
+
+.row{
+    width: 1280px ;
+min-height: 50px;
+background: #ffff;
+margin: 70px auto 0;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+
+}
+
+.row .box2{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: rgb(26, 92, 167);
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+
+     
+}
+
+
+.row .box2 .img-box{
+
+    position: relative;
+}
+
+.row .box2:hover .img-box img
+{
+    
+    transition: transform 2s;
+        transform: scale(1.2)
+
+}
+ */
+.img-gallary{
+    width: 80%;
+    margin: 100px auto 50px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallary img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.img-gallary  img:hover{
+transform: scale(0.8) rotate(-15deg);
+border-radius: 20px;
+box-shadow: 0 32px 75px rgba(146, 149, 167, 0.2) ;
+transform: scale(1.2);
+    z-index: 2;
+}
+
+
+.full-img{
+width: 100%;
+height: 100vh;
+background: rgba(0, 0, 0, 0.9);
+position: fixed;
+top: 0;
+left: 0;
+display: none;
+align-items: center;
+justify-content: center;
+transition: 1s;
+z-index: 100;
+}
+
+.full-img img{
+
+    width: 90%;
+    max-width: 500px;
+}
+
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #ffff;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(27, 19, 62, 0.775);
+    
+}
+
